@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+#calculator {
+    position: absolute;
+    width: 360px;
+    height: 640px;
+    left: 300px;
+    top: 64px;
+    background: linear-gradient(180deg, #FEFEFE 0%, #E9ECEE 37.34%);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    box-shadow: 13px 13px 10px #E6E5E5;
+    border-radius: 20px;
+}
+
+.screen {
+    position: absolute;
+    width: 319px;
+    height: 110px;
+    left: 21px;
+    top: 65px;
+    background: #000000;
+    box-shadow: 4px 4px 4px #D5D8DC, -4px -4px 4px #FFFEFE;
+    border-radius: 10px;
+}
+
+.screen2 {
+    position: absolute;
+    width: 293px;
+    height: 87px;
+    left: 13px;
+    top: 11px;
+    background: #A5A5A5;
+}
+
+#valor_numero {
+    margin: 0;
+    position: absolute;
+    width: 261px;
+    height: 33px;
+    left: 16px;
+    top: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: right;
+    letter-spacing: 0.15em;
+    color: #3F474E;
+    background-color: rgba(255, 255, 255, 0);
+    border: rgba(255, 255, 255, 0);
+}
+
+.boton {
+    width: 67px;
+    height: 67px;
+    left: 17px;
+    top: 17px;
+    background: #F4F5F7;
+    box-shadow: 4px 4px 5px #DEE0E3, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
+    border-width: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    color: #627785;
+}
+
+.boton input {
+    position: absolute;
+    width: 15px;
+    height: 29px;
+    left: 130px;
+    top: 323px;
+}
+
+#top {
+    margin: 220px 0 0 20px;
+}
+
+#mitad1, #mitad2, #mitad3, #bottom {
+    margin: 17px 0 0 20px;
+}
+
+#top button, #top input, #mitad1 input, #mitad2 input, #mitad3 input, #bottom input, #bottom button {
+    margin: 0 0 0 17px;
+    padding: 0;
+}
+
+.btnSuma, .btnResta, .btnMulti, .btnDiv {
+    background: #D5D6E9;
+    box-shadow: 4px 4px 5px #D6C9DF, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 29px;
+    color: #111C81;
+}
+
+.btnMasmenos, .btnPorcent{
+    background: #F6F0E4;
+box-shadow: 4px 4px 4px #E0DBCE, -4px -4px 4px #FFFFFF;
+border-radius: 30px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="calculator">
+        <div class="screen">
+            <div class="screen2">
+                <input type="text" id="valor_numero" maxlength="20" value="0" class="cajita_valor" readonly>
+            </div>
+        </div>
+
+        <div id="top">
+            <button id="C boton" class="boton" onclick="darC()" style="margin-left: 0px;">
+                C
+            </button>
+
+            <button id="masmenos" class="boton btnMasmenos" onclick="operar(5)">
+                +/-
+            </button>
+            <input type="Button" id="porcentaje" value="%" class="boton btnPorcent" onclick="">
+
+            <input type="Button" id="Dividir" value="÷" class="boton btnDiv" onclick="operar(4)">
+        </div>
+
+        <div id="mitad1">
+            <input type="Button" id="7" value="7" class="boton" class="7" onclick="darNumero('7')"
+                style="margin-left: 0px;">
+
+
+            <input type="Button" id="8" value="8" class="boton" onclick="darNumero('8')">
+
+
+            <input type="Button" id="9" value="9" class="boton" onclick="darNumero('9')">
+
+            <input type="Button" id="Multiplicar" value="x" class="boton btnMulti" onclick="operar(3)">
+
+
+        </div>
+        <div id="mitad2">
+            <input type="Button" id="4" value="4" class="boton" onclick="darNumero('4')" style="margin-left: 0px;">
+
+
+            <input type="Button" id="5" value="5" class="boton" onclick="darNumero('5')">
+
+
+            <input type="Button" id="6" value="6" class="boton" onclick="darNumero('6')">
+
+            <input type="Button" id="Restar" value="-" class="boton btnResta" onclick="operar(2)">
+
+
+        </div>
+        <div id="mitad3">
+            <input type="Button" id="1" value="1" class="boton" onclick="darNumero('1')" style="margin-left: 0px;">
+
+            <input type="Button" id="2" value="2" class="boton" onclick="darNumero('2')">
+
+            <input type="Button" id="3" value="3" class="boton" onclick="darNumero('3')">
+
+            <input type="Button" id="Sumar" value="+" class="boton btnSuma" onclick="operar(1)">
+
+        </div>
+
+        <div id="bottom">
+            <input type="Button" id="0" value="0" class="boton" onclick="darNumero('0')" style="margin-left: 0px;">
+
+            <input type="Button" id="," value="," class="boton" onclick="darComa()">
+
+            <button id="borrar" class="boton" onclick="">
+                <img src="./img/borrar.png" alt="borrar" width="30" height="30">
+            </button>
+
+            <input type="Button" id="igual" value="=" class="boton funcion" onclick="esIgual()">
+        </div>
+    </div>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>
