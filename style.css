@@ -140,8 +140,26 @@
     border-radius: 30px;
 }
 
-.botonoperadores:active {
+.botonoperadores:active, .botonBorra:active {
     background: #CDD5DB;
     box-shadow: 4px 4px 5px #DEE0E3, -4px -4px 5px #FFFFFF;
     border-radius: 30px;
+}
+
+.btnSuma:active, .btnResta:active, .btnMulti:active, .btnDiv:active{
+    background: #7F87D4;
+    box-shadow: 4px 4px 5px #D6C9DF, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
+}
+
+.btnMasmenos:active, .btnPorcent:active{
+    background: #e6cdac;
+box-shadow: 4px 4px 4px #DEBF81, -4px -4px 4px #FFFFFF;
+border-radius: 30px;
+}
+
+.btnMasmenos:focus, .btnPorcent:focus{
+    background: #fcc67b;
+box-shadow: 4px 4px 4px #DEBF81, -4px -4px 4px #FFFFFF;
+border-radius: 30px;
 }

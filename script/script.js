@@ -32,6 +32,8 @@ function darC() {
 }
 
 
+
+
 //Esta función realiza las distintas operaciones aritméticas en función del botón pulsado
 function operar(valor) {
     if (num1 == 0) {
@@ -48,7 +50,7 @@ suma = 1
 resta = 2
 multiplicacion = 3
 division = 4
-potencia = 5
+modulo = 5
 */
 
 
@@ -68,7 +70,7 @@ function esIgual() {
             num1 = num2 / num1;
             break;
         case 5:
-            num1 = Math.pow(num2, num1);
+            num1 = num1 % num2
             break;
     }
     refrescar();
@@ -76,6 +78,23 @@ function esIgual() {
     num1 = 0;
 }
 
+function cambioSigno() {
+    num1 = parseFloat(document.getElementById("valor_numero").value);
+    if (num1 > 0) {
+        num1 = num1 - (num1 * 2)
+    } else {
+        num1 = num1 - (num1 * 2)
+    }
+    document.getElementById('valor_numero').value = num1;
+}
+
 function refrescar() {
     document.getElementById("valor_numero").value = num1;
+}
+
+function borrar() {
+    const numPantalla = document.getElementById('valor_numero').value
+    const numPantalla2 = numPantalla.substring(0, numPantalla.length - 1);
+    document.getElementById('valor_numero').value = numPantalla2
+    num1 = numPantalla2
 }

@@ -22,10 +22,10 @@
                 C
             </button>
 
-            <button id="masmenos" class="boton btnMasmenos" onclick="operar(5)">
+            <button id="masmenos" class="boton btnMasmenos" onclick="cambioSigno()">
                 +/-
             </button>
-            <input type="Button" id="porcentaje" value="%" class="boton btnPorcent" onclick="">
+            <input type="Button" id="porcentaje" value="%" class="boton btnPorcent" onclick="operar(5)">
 
             <input type="Button" id="Dividir" value="÷" class="boton btnDiv" onclick="operar(4)">
         </div>
@@ -73,7 +73,7 @@
 
             <input type="Button" id="," value="." class="boton botonoperadores" onclick="darComa()">
 
-            <button id="borrar" class="boton botonBorra" onclick="">
+            <button id="borrar" class="boton botonBorra" onclick="borrar()">
                 <img src="./img/borrar.png" alt="borrar" width="30" height="30">
             </button>
 
