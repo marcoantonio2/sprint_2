@@ -102,8 +102,46 @@
     color: #111C81;
 }
 
-.btnMasmenos, .btnPorcent{
+.btnMasmenos, .btnPorcent {
     background: #F6F0E4;
-box-shadow: 4px 4px 4px #E0DBCE, -4px -4px 4px #FFFFFF;
-border-radius: 30px;
+    box-shadow: 4px 4px 4px #E0DBCE, -4px -4px 4px #FFFFFF;
+    border-radius: 30px;
+}
+
+.botonC {
+    background: #FE9505;
+    box-shadow: 4px 4px 4px #DEBF81, -4px -4px 4px #FFFFFF;
+    border-radius: 30px;
+}
+
+.botonIgual {
+    background: #2D41F5;
+    box-shadow: 4px 4px 5px #6976E9, -4px -4px 3px #FFFFFF;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.botonBorra {
+    background: #E7E9EC;
+    box-shadow: 4px 4px 5px #D4D5D7, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
+}
+
+.btnSuma:focus, .btnResta:focus, .btnMulti:focus, .btnDiv:focus {
+    background: #5563E6;
+    box-shadow: 4px 4px 5px #D6C9DF, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
+    color: #FFFFFF;
+}
+
+.botonC:active {
+    background: #DD922B;
+    box-shadow: 4px 4px 4px #DEBF81, -4px -4px 4px #FFFFFF;
+    border-radius: 30px;
+}
+
+.botonoperadores:active {
+    background: #CDD5DB;
+    box-shadow: 4px 4px 5px #DEE0E3, -4px -4px 5px #FFFFFF;
+    border-radius: 30px;
 }
